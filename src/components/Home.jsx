@@ -25,7 +25,7 @@ export default function Home() {
     dispatch(getItems());
   }, []);
   return (
-    <div className="mx-auto min-h-[80vh] max-w-[72rem]">
+    <div className="mx-auto min-h-[80vh] max-w-[72rem] mt-[100px]">
       {isLoading ? (
         <p>loading...</p>
       ) : (

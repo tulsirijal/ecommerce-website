@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 export default function Navbar() {
   const { cartItems } = useSelector((state) => state.cartItem);
   return (
-    <nav className=" bg-slate-900 mb-5">
+    <nav className=" bg-slate-900  fixed inset-x-0 top-0 ">
       <div className="flex justify-between py-2 items-center w-11/12 max-w-[72rem] mx-auto">
         <NavLink to="/">
           <img

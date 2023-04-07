@@ -7,7 +7,7 @@ export default function Cart() {
   const { cartItems } = useSelector((state) => state.cartItem);
 
   return (
-    <div className="mx-auto w-11/12 max-w-[1150px]">
+    <div className="mx-auto w-11/12 max-w-[1150px] mt-[100px]">
       <div
         className={` flex flex-col md:flex-row justify-center items-center gap-4 my-10`}
       >
