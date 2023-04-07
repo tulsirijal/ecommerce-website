@@ -8,10 +8,7 @@ export const getItems = createAsyncThunk("cart/getCartItems", () => {
     .catch((err) => console.log(err));
 });
 const initialState = {
-  cartItems: [],
-  quantity:0,
-  amount: 0,
-  total: 0,
+  products: [],
   isLoading: false,
 };
 export const productSlice = createSlice({
@@ -22,9 +19,8 @@ export const productSlice = createSlice({
   extraReducers: builder => {
     builder.addCase(getItems.fulfilled, (state, action) => {
         console.log(action)
-        state.cartItems = action.payload
+        state.products = action.payload
     })
   }
 })
-export const {} = productSlice.actions;
 export default productSlice.reducer;
