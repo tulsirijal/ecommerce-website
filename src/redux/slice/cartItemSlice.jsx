@@ -15,8 +15,6 @@ export const cartItemSlice = createSlice({
             console.log(action.payload)
         },
         removeFromCart:(state,action)=>{
-        //    const removed =  state.cartItems.filter(item=>item.id!==action.payload.id)
-        //    state.cartItems = removed
         const indexOfItem = state.cartItems.findIndex((item)=>item.id===action.payload.id);
         const newCartItems = [...state.cartItems]
         if(indexOfItem>=0){

@@ -1,10 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import EmptyCart from "./EmptyCart";
 import CartItemProduct from "./CartItemProduct";
 import Summary from "./Summary";
 export default function Cart() {
   const { cartItems } = useSelector((state) => state.cartItem);
+  
+  
 
   return (
     <div className="mx-auto w-11/12 max-w-[1150px] mt-[100px]">
